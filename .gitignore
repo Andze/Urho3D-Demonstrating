@@ -13,6 +13,8 @@
 generated/
 /Source/Urho3D/tolua++-prefix/
 
+build
+
 # Output files
 /Source/**/*.a
 /Source/ThirdParty/LuaJIT/src/host/buildvm

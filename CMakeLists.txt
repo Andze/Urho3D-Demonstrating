@@ -26,6 +26,7 @@ project (Advanced-Games-Programming)
 set (CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake/Modules)
 # Include Urho3D Cmake common module
 include (UrhoCommon)
+#include(Urho3D)
 
 # Define target name
 set (TARGET_NAME Advanced-Games-Programming)
