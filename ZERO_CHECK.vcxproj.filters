@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\1da1436bc6dabdf3c0f8ab8f1f94fb30\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A11EC1FB-B7C8-3B43-9F49-FD638FF449E8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

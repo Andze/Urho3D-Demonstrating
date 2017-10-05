@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81321F6F-72D9-3526-9159-36F6813E4A0F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Andy\Desktop\Urho3D-1.7\Build\include;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty\Bullet;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty\Lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Andy\Desktop\Urho3D-1.7\Build\include;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty\Bullet;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty\Lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Andy\Desktop\Urho3D-1.7\Build\include;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty\Bullet;C:\Users\Andy\Desktop\Urho3D-1.7\Build\include\Urho3D\ThirdParty\Lua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating -BC:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating --check-stamp-file C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeLists.txt;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeCCompiler.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\UrhoCommon.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckHost.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckCompilerToolchain.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDependentOption.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\FindUrho3D.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckUrhoLibrary.cpp;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\FindDirectX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating -BC:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating --check-stamp-file C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeLists.txt;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeCCompiler.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\UrhoCommon.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckHost.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckCompilerToolchain.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDependentOption.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\FindUrho3D.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckUrhoLibrary.cpp;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\FindDirectX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating -BC:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating --check-stamp-file C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Andy/Documents/GitHub/Urho3D-Demonstrating/CMakeLists.txt;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeCCompiler.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\3.9.4\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\UrhoCommon.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckHost.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckCompilerToolchain.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeDependentOption.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\FindUrho3D.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\CheckUrhoLibrary.cpp;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\FindDirectX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckIncludeFile.cxx.in;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeParseArguments.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMake\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.9\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\ZERO_CHECK.vcxproj">
+      <Project>{AD09B693-D377-35BE-BCC0-23BF5AC93ACD}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andy\Documents\GitHub\Urho3D-Demonstrating\Advanced-Games-Programming.vcxproj">
+      <Project>{8B54D21B-3DAA-346D-AF4B-E92834B302DE}</Project>
+      <Name>Advanced-Games-Programming</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
